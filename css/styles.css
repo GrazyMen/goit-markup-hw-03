@@ -8,7 +8,7 @@
 /* цвет текста контактов в футере rgba(255, 255, 255, 0.6) */
 
 :root {
-  --header-border:#ECECEC;
+  --header-border: #ececec;
   --accent-color: #2196f3;
   --title-text-color: #212121;
   --primary-text-color: #757575;
@@ -37,13 +37,14 @@ ul,
 p {
   margin-top: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-address{
+address {
   font-style: normal;
 }
 button {
@@ -51,7 +52,7 @@ button {
   border: none;
   border-radius: 4px;
 }
-section{
+section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -65,7 +66,7 @@ section{
   padding-left: 0;
   margin: 0;
 }
-.link{
+.link {
   text-decoration: none;
 }
 .logo {
@@ -76,14 +77,12 @@ section{
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-
 }
 
 .page-studio {
   color: var(--studio-word-color);
 }
 .page-header {
-
   border-bottom: 1px solid var(--header-border);
 }
 .main-nav {
@@ -101,14 +100,14 @@ section{
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.site-nav .item, .link:hover,
-.site-nav .item, .link:focus
- {
- color: var(--accent-color);
-  
+.site-nav .item,
+.link:hover,
+.site-nav .item,
+.link:focus {
+  color: var(--accent-color);
 }
 
-.site-nav .item .link.current{
+.site-nav .item .link.current {
   color: var(--accent-color);
 }
 .site-nav {
@@ -125,21 +124,21 @@ section{
 
 /* Site-info */
 
-  .site-info .link {
-    color: var(--primary-text-color);
-  
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-  }
-  
-  .site-info .link:hover,
-  .site-info .link:focus {
-    color: var(--accent-color);
-  }
-  
+.site-info .link {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-info .link:hover,
+.site-info .link:focus {
+  color: var(--accent-color);
+}
+
 .site-info {
   display: flex;
   margin-left: auto;
@@ -168,7 +167,6 @@ section{
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
- 
 }
 
 .hero-title-1 .link:hover,
@@ -185,7 +183,7 @@ section{
 
 .fuature-list {
   display: flex;
- column-gap: 30px;
+  column-gap: 30px;
 }
 .section-title .fuature {
   color: var(--title-text-color);
@@ -218,7 +216,6 @@ section{
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  
 }
 .title {
   margin-bottom: 10px;
@@ -240,13 +237,13 @@ section{
 }
 .team {
   display: flex;
-
 }
 .list-team {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
-  border-color: var(--background-main-color);
+  background-color: var(--background-main-color);
 }
 .team li {
   margin-right: 30px;
@@ -276,16 +273,13 @@ section{
 
 .text-team {
   color: var(--primary-text-color);
-font-size: 16px;
+  font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+}
 
-}
-.img {
-  margin-bottom: 30px;
-}
-.title-text{
+.title-text {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -309,13 +303,13 @@ font-size: 16px;
   color: var(--accent-color);
 }
 .footer {
- margin-top: 20px;
+  margin-top: 20px;
 }
 .footer-bck {
   background-color: var(--background-titles-color);
   padding: 60px 0;
 }
-.footer-list{
+.footer-list {
   margin-top: 8px;
 }
 .link-map {
@@ -358,14 +352,14 @@ font-size: 16px;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-   border: none;
+  border: none;
 }
 
 /* Portfolio */
 .list-table {
   list-style: none;
 }
-.table{
+.table {
   list-style: none;
 }
 .list-table li {
@@ -397,6 +391,10 @@ font-size: 16px;
   width: 370px;
   border-color: var(--background-main-color);
 }
+.table-list{
+  padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+}
 .title-g {
   color: var(--title-text-color);
   font-weight: 700;
@@ -412,10 +410,10 @@ font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
-.list-table{
-display: flex;
-justify-content: center;
-margin-top: 50px;
+.list-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 .table {
   display: flex;
